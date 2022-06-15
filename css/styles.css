@@ -10,9 +10,10 @@ body{
     background-color: #f3f3f3;
 }
 .promocion{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    background-color: #1CD1B0;
+    background-color: #D1891C;
+    padding: 10px;
 }
 section.navbar{
     position: -webkit-sticky;
