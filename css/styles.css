@@ -10,7 +10,7 @@ body{
     background-color: #f3f3f3;
 }
 .promocion{
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 400;
     background-color: #1CD1B0;
 }
@@ -22,17 +22,21 @@ section.navbar{
 }
 .navbar h1{
     margin: 0;
-    font-size: 40px;
+    padding: 15px;
+    font-size: 2.5rem;
     font-weight: 400;
+    color: white;
 }
 .cardContainer{
     margin: 50px;
     position: relative;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .card{
     width: 300px;
+    margin: 30px 15px;
     position: relative;
     box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.52);
 }
@@ -40,14 +44,14 @@ section.navbar{
     border-radius: 16px 16px 0 0;
 }
 .card h2{
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 10px;
     margin-top: 65px;
 }
 .card p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     padding: 20px;
     margin-top: 0;
@@ -83,20 +87,45 @@ section.navbar{
 .card i{
     position: absolute;
     color: red;
-    font-size: 30px;
+    font-size: 1.8rem;
     z-index: 3;
     top: 10px;
     left: 10px;
 }
 footer{
     background-color: #00669F;
-    height: 51px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
 }
 footer p{
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     margin: 0;
     text-align: center;
-    padding-top: 15px;
+    padding: 1rem;
+}
+footer a{
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+}
+footer a img{
+    height: 1.7rem;
+}
+
+
+/*estilos para smartphones */
+
+@media only screen and (max-width: 767px){
+
+	footer{
+        flex-direction: column;
+    }
+    footer a{
+        position: static;
+    }
+
 }
